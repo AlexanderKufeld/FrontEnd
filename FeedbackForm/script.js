@@ -32,8 +32,6 @@ const form$ = document.getElementsByTagName('form')[0];
         const NumberOfRecord = document.getElementById('Number of Record');
         const Date = document.getElementById('date');
 
-
-
     let clicks= 0;
     function click() {
     clicks += 1;
