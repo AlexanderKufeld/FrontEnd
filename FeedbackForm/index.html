@@ -13,37 +13,39 @@
         <div class="form-group">
             <label> name</label>
             <input type="text" class="form-control" name="name">
-        
+            <small id="nameHelp" class="form-text text-muted">Enter your name</small>
+        </div>
+
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted">Enter your eMail please</small>
         </div>
 
-        <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Your Feedback</span>
-            </div>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group">
+            <label>Feedback text</label>
+            <textarea class="form-control" name="feedback"></textarea>
+            <small id="feedbackHelp" class="form-text text-muted"> Feedback</small> 
+        </div>
 
-        <button type="button" onClick="click()">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
         
         <p>Clicks: <a id="Number of Record">0</a></p>
-    </form>    
+    </form> 
+
+    <div class="label" id="count"></div>
+
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Number of Record</th>
+                <th scope="col"id = Date>Date</th>
+                <th scope="col"id = Number of Record>Number of Record</th>
                 <th scope="col"id="name">Name</span></th>
                 <th scope="col"id="eMail">eMail</th>
                 <th scope="col"id="Feedback">Feedback</th>
             </tr>
-            </thead>
-            <tbody>
-            </tbody>
-            <tfoot><tr><td><div class="alert alert-primary" role="alert"></div></td></tr></tfoot>
-        </table>
+        </thead>   
+    </table>
+
 </body>
 </html>
