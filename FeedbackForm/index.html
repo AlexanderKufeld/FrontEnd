@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback-form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <script src="script.js" defer async></script>
 </head>
 
@@ -31,10 +33,12 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         <div class="label" id="count"></div> 
+
+        <table class="table" id="feedbackTable">
             <thead>
                 <tr>
                     <th scope="col">Num.</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Name<i class='icon-arrow-up'></i><i class='icon-arrow-down'></th></th>
                     <th scope="col">email</th>
                     <th scope="col">Feedback</th>
                     <th scope="col">Date</th>
