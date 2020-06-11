@@ -3,7 +3,7 @@ let data = [
         id: 1,
         name: 'Vasya',
         email: 'vasja@dc.com',
-        feedback: 'vvvvvvvvvvvvvvvv',
+        feedback: 'vvvvvvvvvvvvv',
         date: new Date(2020, 1, 20 + 2).toLocaleString()
 
     },
@@ -11,14 +11,14 @@ let data = [
         id: 2,
         name: 'Ivan',
         email: 'ivan@fvfv.com',
-        feedback: 'iiiiiiiiiiiiiiiiiiiiiiiii',
+        feedback: 'iiiiiiiiiiiiiiiiiiiii',
         date: new Date().toLocaleString()
     },
     {
         id: 3,
         name: 'Petya',
         email: 'petja@eded.com',
-        feedback: 'pppppppppppppppppppp',
+        feedback: 'pppppppppppppppp',
         date: new Date(2020, 1, 20).toLocaleString()
     },
 ];
@@ -30,7 +30,6 @@ document.querySelector('form').addEventListener('submit', event => {
     event.preventDefault();
 
     let feedback = {};
-
     feedback.id = data.length + 1;
     feedback.name = document.querySelector('form input[name=name]').value;
     feedback.email = document.querySelector('form input[name=email]').value;
@@ -79,11 +78,10 @@ function sort(param) {
         });
         sortedBy = -1;
     } else {
-        
+
         document.getElementById(param).innerHTML = param;
         sortedBy = 0;
     }
-
     renderFeedbackTable(sortedData);
 }
 /*
